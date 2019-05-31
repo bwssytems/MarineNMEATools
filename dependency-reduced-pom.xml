@@ -8,17 +8,13 @@
     <finalName>HDMConverter</finalName>
     <plugins>
       <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.12.4</version>
-        <configuration>
-          <includes>
-            <include>com.bwssystems.marine.nmea.test.CompleteTestSuite.java</include>
-          </includes>
-        </configuration>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration />
       </plugin>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>2.4.3</version>
+        <version>3.2.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -41,4 +37,3 @@
     </plugins>
   </build>
 </project>
-
